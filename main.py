@@ -26,4 +26,3 @@ class MyBot(commands.Bot):
 bot = MyBot()
 bot.mongoConnect = motor.motor_asyncio.AsyncIOMotorClient(MONGODB_URI)
 bot.run (DISCORD_TOKEN)
-
