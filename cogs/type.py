@@ -19,6 +19,8 @@ class Type(commands.Cog):
         collection = db["typing"]
 
         # delete database for profile and typing results
+        # for test purposes only
+        """
         if user_choice == "d":
             db = self.bot.mongoConnect["discord"]
             collection = db["typing"]
@@ -28,8 +30,9 @@ class Type(commands.Cog):
             collection.delete_many({})
             await ctx.send("deleted")
             return
-
-        elif user_choice == "profile":
+        """
+        
+        if user_choice == "profile":
             if await check_user_exists(topic, db, "profile") == False:
                 await ctx.send("You do not have a profile yet. Please complete a typing test first!")
             else:
