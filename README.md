@@ -14,4 +14,4 @@ A Discord Bot that allows you to practice your typing from a topic of your choic
 !type wiki [topic] -> Sends a snippet of a wikipedia article summary of the given topic to type.<br/>
 
 # Note
-In the case where the user just types "!type", the program will default to doing "!type wiki programming".
+In the case where the user does not type a command or topic, the program will default to using "wiki" as the command and "programming" as the topic.
