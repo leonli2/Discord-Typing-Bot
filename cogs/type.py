@@ -66,10 +66,14 @@ class Type(commands.Cog):
             if text_valid == False:
                 return 
 
-        else:
+        elif user_choice == "wiki":
             text, wiki_valid = await get_wiki_text (ctx, topic, sentence_length)
             if wiki_valid == False:
                 return
+        
+        elif user_choice != "":
+            await ctx.send("Please enter a correct command!")
+            return
             
         # send passage
         await ctx.send("Type this:")
